@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+   
+</head>
+
+<body>
+    <header>
+        
+        <h1>User Profile</h1>
+       
+    </header>
+
+    <main>
+        <h2>Welcome, <span id="username"></span>!</h2>
+        <div>
+            <p>Age: <span id="age"></span></p>
+            <p>DOB: <span id="dob"></span></p>
+            <p>Contact: <span id="contact"></span></p>
+            
+        </div>
+        <form id="updateProfileForm">
+            <input type="text" id="ageInput" placeholder="Update Age">
+            <input type="text" id="dobInput" placeholder="Update Date of Birth">
+            <input type="text" id="contactInput" placeholder="Update Contact">
+           
+            <button type="submit">Update Profile</button>
+        </form>
+        <p id="profileError" class="error-message"></p>
+        <p id="profileSuccess" class="success-message"></p>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>
